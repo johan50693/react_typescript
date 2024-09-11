@@ -44,7 +44,12 @@ export default function Home() {
         {
           images.map(({id,url}) => (
             <div key={id}>
-              <Randomfox  img={url} />
+              <Randomfox  
+                src={url}
+                width={300} 
+                height="auto" 
+                className='rounded-full bg-gray-300'  
+              />
             </div>
           ))
         }
