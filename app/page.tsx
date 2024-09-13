@@ -12,7 +12,7 @@ export default function Home() {
 
   const [images, setImages] = useState<IFoxImageItems[]>([])
 
-  const addNewImage: MouseEventHandler<HTMLButtonElement> = (event) => {
+  const addNewImage: MouseEventHandler<HTMLButtonElement> = () => {
 
     const newImage: IFoxImageItems = {
         id: generateId() ,
